@@ -1,0 +1,7 @@
+{
+  "name": "atividade-HTTP",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
