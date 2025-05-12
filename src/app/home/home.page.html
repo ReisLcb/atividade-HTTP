@@ -17,12 +17,12 @@
 <ion-button (click)="getLivro(titulo)">Buscar livro</ion-button>
   <div *ngFor="let livro of livros">
     <ion-card>
-      <img *ngIf="livro.cover_id != undefined" src="https://covers.openlibrary.org/b/id/{{livro.cover_id}}-M.jpg" id="livro-cover">
+      <img *ngIf="livro.cover_i != undefined" src="https://covers.openlibrary.org/b/id/{{livro.cover_i}}-M.jpg" id="livro-cover">
       <!-- Se o livro tiver uma capa, ele apresenta no card -->
       <ion-card-header>
-        <ion-card-title>{{ livro.titulo }}</ion-card-title>
-        <ion-card-subtitle>Autor: {{ livro.autor }}</ion-card-subtitle>
-        <ion-card-subtitle>Ano de lançamento: {{ livro.ano }}</ion-card-subtitle>
+        <ion-card-title>{{ livro.title }}</ion-card-title>
+        <ion-card-subtitle>Autor: {{ livro.author_name }}</ion-card-subtitle>
+        <ion-card-subtitle>Ano de lançamento: {{ livro.first_publish_year }}</ion-card-subtitle>
       </ion-card-header>
 </ion-card>
   </div>
